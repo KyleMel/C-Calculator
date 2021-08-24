@@ -7,12 +7,12 @@ namespace Calculator
         static void Main(string[] args)
         {
             Console.Write("Enter a Number: ");
-            Console.ReadLine();
+            int firstNum = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Enter a Number: ");
-            Console.ReadLine();
+            int secondNum = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Would what would you like to do with: ");
+            Console.Write("Choose an operator: \n Add: + \n Multiply: x \n Divide: / \nEnter: ");
             Console.ReadLine();
 
             Console.Write("Results: \n Press Enter to exit");
