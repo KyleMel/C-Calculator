@@ -6,6 +6,8 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            try
+            { 
             Console.Write("Enter a Number: ");
             int firstNum = Convert.ToInt32(Console.ReadLine());
 
@@ -17,7 +19,11 @@ namespace Calculator
 
             Console.Write("Results: \n Press Enter to exit");
             Console.ReadLine();
-
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Invalid input. Must be a number: {e}");
+            }
         }
     }
 }
