@@ -32,7 +32,7 @@ namespace Calculator
                         result = firstNum * secondNum;
                         break;
                     case "/":
-                        result = firstNum - secondNum;
+                        result = firstNum / secondNum;
                         break;
                     default:
                         Console.WriteLine("Invalid input");
